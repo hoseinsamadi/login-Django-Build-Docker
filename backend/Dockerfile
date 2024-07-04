@@ -1,9 +1,9 @@
-FROM python:3.9.19-alpine3.20
+FROM python:3.11.4-alpine
 
 WORKDIR /app
 
 RUN pip install --upgrade pip
-COPY ../Django-Login/requirements.txt app/requirements.txt
+COPY ./Django-Login/requirements.txt app/requirements.txt
 RUN pip install -r requirements.txt
 COPY ./entrypoint.sh /app/entrypoint.sh
 
