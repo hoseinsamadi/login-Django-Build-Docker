@@ -12,6 +12,6 @@ services:
     ports:
       - 6906:8000
     environment:
-      - Debug=1
-      - Seret_Key=69hb69hb69hb66hb
-      - Allowed_Hosts=localhost,127.0.0.1
+      - DEBUG=1
+      - SECRET_KEY= 02125581fd4244fdf
+      - ALLOWED_HOSTS=localhost,127.0.0.1
